@@ -1,4 +1,4 @@
-参考项目 [QChatGPT](https://github.com/RockChinQ/QChatGPT)， [mirai](https://github.com/mamoe/mirai) 
+参考项目 [QChatGPT](https://github.com/RockChinQ/QChatGPT)， [mirai(本文部署的消息平台)](https://github.com/mamoe/mirai) 
 
 chatgpt的API获取可以看[这个项目](https://github.com/chatanywhere/GPT_API_free)
 
@@ -8,7 +8,7 @@ chatgpt的API获取可以看[这个项目](https://github.com/chatanywhere/GPT_A
 
 ## 如何部署
 
-在 [QChatGPT部署教程](https://qchatgpt.rockchin.top/posts/deploy/qchatgpt/manual.html)中有在windows本地环境中部署QQ机器人的详细教程此处不再赘述，主要提出在linux与服务器下部分操作的差异。
+在 [QChatGPT部署教程](https://qchatgpt.rockchin.top/posts/deploy/qchatgpt/manual.html)中有在windows本地环境中部署QQ机器人的详细教程，此处不再赘述，主要提出在linux与服务器下部分操作的差异。
 
 作者使用[XSHELL](https://www.xshell.com/zh/xshell/)和[XFTP](https://www.xshell.com/zh/xftp/)进行远程控制云服务器和文件管理，两个软件上手都比较容易。
 
@@ -36,6 +36,19 @@ chatgpt的API获取可以看[这个项目](https://github.com/chatanywhere/GPT_A
 `XFTP`连接方式与 `XSHELL` 相似，这里不再赘述。
 
 于是乎，即使你不太擅长linux的下载和文件操作也能跟着[QChatGPT部署教程](https://qchatgpt.rockchin.top/posts/deploy/qchatgpt/manual.html)进行，不过要注意不要下载成 `windows系统的文件`。
+
+### windows端和linux服务器部分操作差异
+
+#### 启动mcl文件
+
+linux系统中需要先给 `mcl` 执行权限才能调用
+
+```shell
+// 给mcl执行权限
+chmod -x mcl
+// 执行mcl
+./mcl
+```
 
 -------------
 施工ing
