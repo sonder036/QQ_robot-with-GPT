@@ -36,3 +36,6 @@ chatgpt的API获取可以看[这个项目](https://github.com/chatanywhere/GPT_A
 `XFTP`连接方式与 `XSHELL` 相似，这里不再赘述。
 
 于是乎，即使你不太擅长linux的下载和文件操作也能跟着[QChatGPT部署教程](https://qchatgpt.rockchin.top/posts/deploy/qchatgpt/manual.html)进行，不过要注意不要下载成 `windows系统的文件`。
+
+-------------
+施工ing
