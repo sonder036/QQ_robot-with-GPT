@@ -54,13 +54,13 @@ git clone https://github.com/RockChinQ/QChatGPT
 cd QchatGPT
 ```
 
-2.安装依赖
+- 安装依赖
 
 ```
 pip3 install -r requirements.txt
 ```
 
-3.运行主程序
+- 运行主程序
 
 ```
 python3 main.py
