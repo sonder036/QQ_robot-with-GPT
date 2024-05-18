@@ -1,0 +1,35 @@
+{
+    "access-control":{
+        "mode": "blacklist",
+        "blacklist": [],
+        "whitelist": []
+    },
+    "respond-rules": {
+        "default": {
+            "at": true,
+            "prefix": [
+                "/ai", "!ai", "！ai", "ai"
+            ],
+            "regexp": [],
+            "random": 0.0
+        }
+    },
+    "income-msg-check": true,
+    "ignore-rules": {
+        "prefix": ["/"],
+        "regexp": []
+    },
+    "check-sensitive-words": true,
+    "baidu-cloud-examine": {
+        "enable": false,
+        "api-key": "",
+        "api-secret": ""
+    },
+    "rate-limit": {
+        "strategy": "drop",
+        "algo": "fixwin",
+        "fixwin": {
+            "default": 60
+        }
+    }
+}

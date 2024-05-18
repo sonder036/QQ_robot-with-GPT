@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  qchatgpt:
+    image: rockchin/qchatgpt:latest
+    volumes:
+      - ./data:/app/data
+      - ./plugins:/app/plugins
+    restart: on-failure
+    # 根据具体环境配置网络
