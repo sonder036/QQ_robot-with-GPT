@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+export JAVA_BINARY="/root/QQ_robot/mirai/java/bin/java"
+$JAVA_BINARY -jar mcl.jar $*

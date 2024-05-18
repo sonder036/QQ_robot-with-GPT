@@ -1,0 +1,491 @@
+[0m2024-05-13 14:23:20 V/Net 3783234325: Invalidate caches because hash file not available.[0m
+[0m2024-05-13 14:23:20 V/Net 3783234325: No server list cached.[0m
+[92m2024-05-13 14:23:24 I/Net 3783234325: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2024-05-13 14:23:24 I/Net 3783234325: Successfully fetched ecdh public key from server.[0m
+[0m2024-05-13 14:23:24 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:23:24 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Password@1798435666[0m
+[0m2024-05-13 14:23:26 V/Net 3783234325: Send: wtlogin.login(9:password-login)[0m
+[0m2024-05-13 14:23:27 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:31:37 V/Net 3783234325: Send: wtlogin.login(2:submit-slider)[0m
+[0m2024-05-13 14:31:38 V/Net 3783234325: Recv: wtlogin.login[0m
+[93m2024-05-13 14:31:38 W/Net 3783234325: Failed with auth method: Password@1798435666
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m
+[0m2024-05-13 14:31:38 V/Net 3783234325: [AuthControl/resume] Fire auth failed with cause: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)[0m
+[93m2024-05-13 14:31:38 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+[0m
+[92m2024-05-13 14:31:38 I/Net 3783234325: ECDH key is valid.[0m
+[0m2024-05-13 14:31:38 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:31:38 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)]@1037851427[0m
+[93m2024-05-13 14:31:38 W/Net 3783234325: Failed with auth method: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)]@1037851427
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	... 5 more
+[0m
+[93m2024-05-13 14:31:38 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	... 6 more
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=237, title=安全提醒, message=当前网络不稳定，登录失败。推荐使用常用设备或通过手机号登录。, errorInfo=)]
+[0m
+[93m2024-05-13 14:31:38 W/Net 3783234325: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.)[0m
+[0m2024-05-13 14:31:50 V/Net 3783234325: Validated caches.[0m
+[0m2024-05-13 14:31:50 V/Net 3783234325: No server list cached.[0m
+[92m2024-05-13 14:31:53 I/Net 3783234325: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2024-05-13 14:31:53 I/Net 3783234325: Successfully fetched ecdh public key from server.[0m
+[0m2024-05-13 14:31:53 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:31:53 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Password@250334088[0m
+[0m2024-05-13 14:31:55 V/Net 3783234325: Send: wtlogin.login(9:password-login)[0m
+[0m2024-05-13 14:31:56 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:32:25 V/Net 3783234325: Send: wtlogin.login(2:submit-slider)[0m
+[0m2024-05-13 14:32:25 V/Net 3783234325: Recv: wtlogin.login[0m
+[93m2024-05-13 14:32:25 W/Net 3783234325: Failed with auth method: Password@250334088
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m
+[0m2024-05-13 14:32:25 V/Net 3783234325: [AuthControl/resume] Fire auth failed with cause: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)[0m
+[93m2024-05-13 14:32:25 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+[0m
+[92m2024-05-13 14:32:25 I/Net 3783234325: ECDH key is valid.[0m
+[0m2024-05-13 14:32:25 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:32:25 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]@31367980[0m
+[93m2024-05-13 14:32:25 W/Net 3783234325: Failed with auth method: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]@31367980
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	... 5 more
+[0m
+[93m2024-05-13 14:32:25 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	... 6 more
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]
+[0m
+[93m2024-05-13 14:32:25 W/Net 3783234325: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.)[0m
+[0m2024-05-13 14:33:06 V/Net 3783234325: Validated caches.[0m
+[0m2024-05-13 14:33:06 V/Net 3783234325: No server list cached.[0m
+[92m2024-05-13 14:33:08 I/Net 3783234325: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2024-05-13 14:33:08 I/Net 3783234325: Successfully fetched ecdh public key from server.[0m
+[0m2024-05-13 14:33:09 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:33:09 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Password@124522106[0m
+[0m2024-05-13 14:33:10 V/Net 3783234325: Send: wtlogin.login(9:password-login)[0m
+[0m2024-05-13 14:33:10 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:33:52 V/Net 3783234325: Send: wtlogin.login(2:submit-slider)[0m
+[0m2024-05-13 14:33:52 V/Net 3783234325: Recv: wtlogin.login[0m
+[93m2024-05-13 14:33:52 W/Net 3783234325: Failed with auth method: Password@124522106
+net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+[0m
+[0m2024-05-13 14:33:52 V/Net 3783234325: [AuthControl/resume] Fire auth failed with cause: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)[0m
+[93m2024-05-13 14:33:52 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.handler.selector.SelectorRequireReconnectException
+[0m
+[92m2024-05-13 14:33:52 I/Net 3783234325: ECDH key is valid.[0m
+[0m2024-05-13 14:33:52 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:33:52 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]@2096850190[0m
+[93m2024-05-13 14:33:52 W/Net 3783234325: Failed with auth method: Error[net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]@2096850190
+net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	... 5 more
+[0m
+[93m2024-05-13 14:33:52 W/Net 3783234325: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.BotAuthorizationException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:263)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:247)
+	... 6 more
+	Suppressed: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:490)
+		at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+		at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+		... 5 more
+Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3783234325), code=45, title=禁止登录, message=你当前使用的QQ版本过低，请前往QQ官网im.qq.com下载最新版QQ后重试。, errorInfo=)]
+[0m
+[93m2024-05-13 14:33:52 W/Net 3783234325: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: BotAuthorization(BotAuthorization.byPassword(<ERASED>)) threw an exception during authorization process. See cause below.)[0m
+[0m2024-05-13 14:43:31 V/Net 3783234325: Hash not match. Invaliding caches.....[0m
+[0m2024-05-13 14:43:31 V/Net 3783234325: No server list cached.[0m
+[92m2024-05-13 14:43:36 I/Net 3783234325: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2024-05-13 14:43:36 I/Net 3783234325: Successfully fetched ecdh public key from server.[0m
+[0m2024-05-13 14:43:36 V/Net 3783234325: [AuthControl/acquire] Acquiring auth method[0m
+[96m2024-05-13 14:43:36 D/Net 3783234325: [AuthControl/acquire] Authorization responded: Password@1991075272[0m
+[0m2024-05-13 14:43:39 V/Net 3783234325: Send: wtlogin.login(9:password-login)[0m
+[0m2024-05-13 14:43:39 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:44:27 V/Net 3783234325: Send: wtlogin.login(2:submit-slider)[0m
+[0m2024-05-13 14:44:27 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:44:32 V/Net 3783234325: Send: wtlogin.login(8:request-sms)[0m
+[0m2024-05-13 14:44:32 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:45:04 V/Net 3783234325: Send: wtlogin.login(7:submit-sms)[0m
+[0m2024-05-13 14:45:04 V/Net 3783234325: [AuthControl/resume] Fire auth completed[0m
+[0m2024-05-13 14:45:04 V/Net 3783234325: Recv: wtlogin.login[0m
+[0m2024-05-13 14:45:04 V/Net 3783234325: Send: StatSvc.register(online)[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Server time updated, serverTime: 1715582705, diff: 0ms=0.0s[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: StatSvc.register[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: No BdhSession cache[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Syncing friend message history...[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Start loading friendGroup list...[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Start loading friend list...[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Start loading stranger list...[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Start loading group list...[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: OidbSvc.0x496[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: No OtherClient online.[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Successfully loaded stranger list: 0 in total[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: OidbSvc.0x5d2_0[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.getFriendGroupList[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Loading friendGroup list: 1/1[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Successfully loaded friendGroup list: 1 in total[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.getFriendGroupList[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Loading friend list: 9/9[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Successfully loaded friend list: 9 in total[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Syncing friend message history: Success.[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Successfully loaded group list: 5 in total.[0m
+[0m2024-05-13 14:45:05 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2024-05-13 14:45:05 I/Net 3783234325: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[93m2024-05-13 14:46:05 W/Net 3783234325: Missing ConfigPush. Switching server...[0m
+[0m2024-05-13 15:23:54 V/Net 3783234325: Validated caches.[0m
+[0m2024-05-13 15:23:54 V/Net 3783234325: No server list cached.[0m
+[92m2024-05-13 15:23:58 I/Net 3783234325: ECDH key is valid.[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: wtlogin.exchange_emp(10:fast-login)[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: wtlogin.exchange_emp[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: StatSvc.register(online)[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Server time updated, serverTime: 1715585041, diff: 0ms=0.0s[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: StatSvc.register[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: No BdhSession cache[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Start loading friendGroup list...[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Syncing friend message history...[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Start loading friend list...[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Start loading stranger list...[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: OidbSvc.0x5d2_0[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Successfully loaded stranger list: 0 in total[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: No OtherClient online.[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: OidbSvc.0x496[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Start loading group list...[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Loading friendGroup list: 1/1[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Successfully loaded friendGroup list: 1 in total[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: friendlist.getFriendGroupList[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Loading friend list: 9/9[0m
+[92m2024-05-13 15:24:01 I/Net 3783234325: Successfully loaded friend list: 9 in total[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: friendlist.getFriendGroupList[0m
+[0m2024-05-13 15:24:01 V/Net 3783234325: Recv: friendlist.GetTroopListReqV2[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[92m2024-05-13 15:24:02 I/Net 3783234325: Syncing friend message history: Success.[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-05-13 15:24:02 I/Net 3783234325: Successfully loaded group list: 5 in total.[0m
+[0m2024-05-13 15:24:02 V/Net 3783234325: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2024-05-13 15:24:02 I/Net 3783234325: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2024-05-13 15:24:02 I/Net 3783234325: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Server list: 117.62.240.80:14000, 120.232.31.164:443, 49.7.253.177:80, msfwifi.3g.qq.com:8080, 183.47.103.84:80, 106.55.114.8:8080, 157.255.5.249:80, 183.47.102.193:8080.[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: No BdhSession to save to cache[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Saving server list to cache[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Saving bdh session to cache[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2024-05-13 15:24:04 V/Net 3783234325: Recv: ConfigPushSvc.PushReq[0m
+[0m2024-05-13 15:30:54 V/Net 3783234325: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-13 15:30:54 V/Net 3783234325: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-13 15:30:54 V/Net 3783234325: [Highway] Uploading forward message to 180.110.193.123:8080, size=936 B[0m
+[0m2024-05-13 15:30:54 V/Net 3783234325: [Highway] Uploading forward message: succeed at 6 KiB/s[0m
+[0m2024-05-13 15:30:56 V/Net 3783234325: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-13 15:30:56 V/Net 3783234325: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-13 15:31:25 V/Net 3783234325: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-13 15:31:25 V/Net 3783234325: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-13 15:31:25 V/Net 3783234325: [Highway] Uploading forward message to 180.110.193.123:8080, size=1.1 KiB[0m
+[0m2024-05-13 15:31:25 V/Net 3783234325: [Highway] Uploading forward message: succeed at 8 KiB/s[0m
+[0m2024-05-13 15:31:26 V/Net 3783234325: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-13 15:31:26 V/Net 3783234325: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-13 15:31:41 V/Net 3783234325: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-13 15:31:41 V/Net 3783234325: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-13 15:41:53 V/Net 3783234325: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-13 15:41:53 V/Net 3783234325: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-13 20:52:47 V/Net 3783234325: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-13 20:52:48 V/Net 3783234325: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-13 20:52:48 V/Net 3783234325: [Highway] Uploading forward message to 180.110.193.123:8080, size=583 B[0m
+[0m2024-05-13 20:52:48 V/Net 3783234325: [Highway] Uploading forward message: succeed at 4 KiB/s[0m
+[0m2024-05-13 20:52:49 V/Net 3783234325: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-13 20:52:50 V/Net 3783234325: Recv: MessageSvc.PbSendMsg[0m
+[96m2024-05-13 21:34:15 D/Net 3783234325: Unknown Transformers528 0x14 template
+templId=10329
+PermList=[TemplParam#1951760500 {
+            name=mqq_uin
+            value=1178669866
+    }, TemplParam#1951760500 {
+            name=nick_name
+            value=sonder
+    }, TemplParam#1951760500 {
+            name=robot_name
+            value=宵宫
+    }, TemplParam#1951760500 {
+            name=robot_schema
+            value=https://web.qun.qq.com/qunrobot/data.html?gc=249783299&amp;robot_uin=3889001741&amp;_wwv=128&amp;_wv=3
+    }, TemplParam#1951760500 {
+            name=user_schema
+            value=mqqapi://userprofile/friend_profile_card?uin=1178669866&amp;source=4&amp;src_type=app&amp;version=1
+    }][0m
+[93m2024-05-13 21:34:18 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:34:18 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:34:25 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:34:25 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:34:54 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:34:54 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[96m2024-05-13 21:34:56 D/Net 3783234325: Unknown Transformers528 0x14 template
+templId=10329
+PermList=[TemplParam#1951760500 {
+            name=mqq_uin
+            value=1094212332
+    }, TemplParam#1951760500 {
+            name=nick_name
+            value=Evina
+    }, TemplParam#1951760500 {
+            name=robot_name
+            value=宵宫
+    }, TemplParam#1951760500 {
+            name=robot_schema
+            value=https://web.qun.qq.com/qunrobot/data.html?gc=443288649&amp;robot_uin=3889001741&amp;_wwv=128&amp;_wv=3
+    }, TemplParam#1951760500 {
+            name=user_schema
+            value=mqqapi://userprofile/friend_profile_card?uin=1094212332&amp;source=4&amp;src_type=app&amp;version=1
+    }][0m
+[93m2024-05-13 21:35:02 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:35:02 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:35:07 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:35:07 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:35:38 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:35:38 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:35:47 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:35:47 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:38:45 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:38:45 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:38:56 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:38:56 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:39:15 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:39:15 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:40:29 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:40:29 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:40:36 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:40:36 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:40:50 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:40:50 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:40:55 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:40:55 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:41:03 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:41:03 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:41:14 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:41:14 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:41:18 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:41:18 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:42:17 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:42:17 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 21:42:18 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 21:42:18 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[0m2024-05-13 22:45:36 V/Net 3783234325: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-13 22:45:37 V/Net 3783234325: Recv: PttStore.GroupPttDown[0m
+[93m2024-05-13 23:19:31 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:19:31 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:19:32 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:19:32 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:21:01 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:21:01 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:21:02 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:21:02 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:21:15 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:21:15 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:21:28 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:21:28 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:21:34 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:21:34 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:22:06 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:22:06 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:22:27 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:22:27 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:22:34 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:22:34 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:22:47 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:22:47 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:23:07 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:23:07 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:23:31 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:23:31 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:23:41 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:23:41 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:23:47 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:23:47 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:23:53 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:23:53 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:24:04 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:24:04 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:24:08 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:24:08 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:24:08 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:24:08 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:24:14 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:24:14 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:24:26 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:24:26 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:25:15 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:25:15 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:25:57 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:25:57 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:26:02 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:26:02 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:26:07 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:26:07 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:27:08 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:27:08 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:36:17 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:36:17 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:37:18 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:37:18 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:40:02 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:40:02 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-13 23:41:03 W/Net 3783234325: Failed to find member 3889001741 in group 249783299[0m
+[0m2024-05-13 23:41:03 V/Net 3783234325: Recv: OnlinePush.PbPushGroupMsg[0m

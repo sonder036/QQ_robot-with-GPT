@@ -1,0 +1,41 @@
+[0m2024-05-15 09:51:36 V/: Send: MultiMsg.ApplyDown(MultiMsg.ApplyDown)[0m
+[0m2024-05-15 09:51:36 V/: Recv: MultiMsg.ApplyDown[0m
+[0m2024-05-15 09:51:36 V/: [Http] Downloading forward message from https://ssl.htdata.qq.com:443[0m
+[0m2024-05-15 09:51:36 V/: [Http] Downloading forward message: succeed[0m
+[0m2024-05-15 15:14:06 V/: Send: wtlogin.exchange_emp(15:refresh-keys)[0m
+[0m2024-05-15 15:14:06 V/: Recv: wtlogin.exchange_emp[0m
+[92m2024-05-15 15:14:06 I/: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2024-05-15 18:12:42 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-15 18:12:42 V/: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-15 18:13:23 V/: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-15 18:13:23 V/: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-15 18:13:23 V/: [Highway] Uploading forward message to 180.110.193.123:8080, size=762 B[0m
+[0m2024-05-15 18:13:23 V/: [Highway] Uploading forward message: succeed at 6 KiB/s[0m
+[0m2024-05-15 18:13:24 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-15 18:13:24 V/: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-15 18:16:50 V/: Send: MultiMsg.ApplyDown(MultiMsg.ApplyDown)[0m
+[0m2024-05-15 18:16:50 V/: Recv: MultiMsg.ApplyDown[0m
+[0m2024-05-15 18:16:50 V/: [Http] Downloading forward message from https://ssl.htdata.qq.com:443[0m
+[0m2024-05-15 18:16:50 V/: [Http] Downloading forward message: succeed[0m
+[0m2024-05-15 20:04:57 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-15 20:04:57 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-15 21:49:29 V/: Send: MultiMsg.ApplyDown(MultiMsg.ApplyDown)[0m
+[0m2024-05-15 21:49:29 V/: Recv: MultiMsg.ApplyDown[0m
+[0m2024-05-15 21:49:29 V/: [Http] Downloading forward message from https://ssl.htdata.qq.com:443[0m
+[0m2024-05-15 21:49:30 V/: [Http] Downloading forward message: succeed[0m
+[0m2024-05-15 23:08:53 V/: Send: ProfileService.Pb.ReqSystemMsgNew.Friend(ProfileService.Pb.ReqSystemMsgNew.Friend)[0m
+[0m2024-05-15 23:08:54 V/: Recv: ProfileService.Pb.ReqSystemMsgNew.Friend[0m
+[0m2024-05-15 23:09:19 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-15 23:09:20 V/: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-15 23:09:59 V/: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-15 23:09:59 V/: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-15 23:09:59 V/: [Highway] Uploading forward message to 180.110.193.123:8080, size=1.3 KiB[0m
+[0m2024-05-15 23:10:00 V/: [Highway] Uploading forward message: succeed at 9 KiB/s[0m
+[0m2024-05-15 23:10:01 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-15 23:10:01 V/: Recv: MessageSvc.PbSendMsg[0m
+[0m2024-05-15 23:13:09 V/: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-15 23:13:10 V/: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-15 23:13:10 V/: [Highway] Uploading forward message to 180.110.193.123:8080, size=1.58 KiB[0m
+[0m2024-05-15 23:13:10 V/: [Highway] Uploading forward message: succeed at 9 KiB/s[0m
+[0m2024-05-15 23:13:11 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-15 23:13:11 V/: Recv: MessageSvc.PbSendMsg[0m

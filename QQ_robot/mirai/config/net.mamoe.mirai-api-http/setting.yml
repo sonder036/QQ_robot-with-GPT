@@ -1,0 +1,12 @@
+adapters:
+  - ws
+debug: true
+enableVerify: true
+verifyKey: yirimirai
+singleMode: false
+cacheSize: 4096
+adapterSettings:
+  ws:
+    host: localhost
+    port: 8080
+    reservedSyncId: -1

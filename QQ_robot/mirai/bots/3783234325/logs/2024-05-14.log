@@ -1,0 +1,97 @@
+[0m2024-05-14 00:00:41 V/: Send: MultiMsg.ApplyUp(MultiMsg.ApplyUp)[0m
+[0m2024-05-14 00:00:41 V/: Recv: MultiMsg.ApplyUp[0m
+[0m2024-05-14 00:00:41 V/: [Highway] Uploading forward message to 180.110.193.123:8080, size=1.26 KiB[0m
+[0m2024-05-14 00:00:41 V/: [Highway] Uploading forward message: succeed at 9 KiB/s[0m
+[0m2024-05-14 00:00:43 V/: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2024-05-14 00:00:43 V/: Recv: MessageSvc.PbSendMsg[0m
+[96m2024-05-14 01:05:41 D/: Unknown Transformers528 0x14 template
+templId=10329
+PermList=[TemplParam#1951760500 {
+            name=mqq_uin
+            value=1094212332
+    }, TemplParam#1951760500 {
+            name=nick_name
+            value=Evina
+    }, TemplParam#1951760500 {
+            name=robot_name
+            value=小吉祥草王呀
+    }, TemplParam#1951760500 {
+            name=robot_schema
+            value=https://web.qun.qq.com/qunrobot/data.html?gc=443288649&amp;robot_uin=2854200865&amp;_wwv=128&amp;_wv=3
+    }, TemplParam#1951760500 {
+            name=user_schema
+            value=mqqapi://userprofile/friend_profile_card?uin=1094212332&amp;source=4&amp;src_type=app&amp;version=1
+    }][0m
+[93m2024-05-14 01:06:06 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:06:06 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:06:34 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:06:34 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:06:35 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:06:35 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:06:36 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:06:36 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:07:42 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:07:42 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:08:53 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:08:53 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:09:05 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:09:05 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:10:02 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:10:02 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:18:10 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:18:10 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 01:23:30 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 01:23:30 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[0m2024-05-14 07:53:03 V/: Send: PttCenterSvr.ShortVideoDownReq(PttCenterSvr.ShortVideoDownReq)[0m
+[0m2024-05-14 07:53:03 V/: Recv: PttCenterSvr.ShortVideoDownReq[0m
+[0m2024-05-14 15:19:04 V/: Send: wtlogin.exchange_emp(15:refresh-keys)[0m
+[0m2024-05-14 15:19:04 V/: Recv: wtlogin.exchange_emp[0m
+[92m2024-05-14 15:19:04 I/: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2024-05-14 16:45:56 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 16:45:56 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 16:46:02 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 16:46:02 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 16:46:10 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 16:46:10 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 18:39:18 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 18:39:18 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 18:41:49 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 18:41:49 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 18:43:48 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 18:43:48 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 19:03:37 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 19:03:37 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 19:04:25 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 19:04:25 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 19:33:23 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 19:33:23 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 20:46:12 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 20:46:12 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:11:05 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:11:05 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:11:12 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:11:12 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:11:55 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:11:55 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:12:00 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:12:00 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:22:03 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:22:03 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:22:13 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:22:14 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:23:54 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:23:54 V/: Recv: PttStore.GroupPttDown[0m
+[0m2024-05-14 21:25:31 V/: Send: PttStore.GroupPttDown(PttStore.GroupPttDown)[0m
+[0m2024-05-14 21:25:31 V/: Recv: PttStore.GroupPttDown[0m
+[93m2024-05-14 23:18:35 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:18:35 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 23:18:58 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:18:58 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 23:19:35 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:19:35 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 23:20:47 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:20:47 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 23:20:58 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:20:58 V/: Recv: OnlinePush.PbPushGroupMsg[0m
+[93m2024-05-14 23:39:48 W/: Failed to find member 2854200865 in group 443288649[0m
+[0m2024-05-14 23:39:48 V/: Recv: OnlinePush.PbPushGroupMsg[0m
